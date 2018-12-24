@@ -18,6 +18,7 @@
 		68219DEF21CC4BF100EE5E5F /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68219DEE21CC4BF100EE5E5F /* ItemStore.swift */; };
 		68219DF121CC7ED600EE5E5F /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68219DF021CC7ED600EE5E5F /* ItemCell.swift */; };
 		68219DF521CC9EAF00EE5E5F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68219DF421CC9EAF00EE5E5F /* DetailViewController.swift */; };
+		68219DF721D0B27500EE5E5F /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68219DF621D0B27500EE5E5F /* ImageStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		68219DEE21CC4BF100EE5E5F /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		68219DF021CC7ED600EE5E5F /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		68219DF421CC9EAF00EE5E5F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		68219DF621D0B27500EE5E5F /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				68219DEC21CC489600EE5E5F /* Item.swift */,
 				68219DF021CC7ED600EE5E5F /* ItemCell.swift */,
 				68219DEE21CC4BF100EE5E5F /* ItemStore.swift */,
+				68219DF621D0B27500EE5E5F /* ImageStore.swift */,
 				68219DC021CC413D00EE5E5F /* Main.storyboard */,
 				68219DC321CC414000EE5E5F /* Assets.xcassets */,
 				68219DC521CC414000EE5E5F /* LaunchScreen.storyboard */,
@@ -122,8 +125,8 @@
 		68219DD021CC414000EE5E5F /* HomepwnerTests */ = {
 			isa = PBXGroup;
 			children = (
-				68219DD121CC414000EE5E5F /* HomepwnerTests.swift */,
 				68219DD321CC414000EE5E5F /* Info.plist */,
+				68219DD121CC414000EE5E5F /* HomepwnerTests.swift */,
 			);
 			path = HomepwnerTests;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				68219DEF21CC4BF100EE5E5F /* ItemStore.swift in Sources */,
 				68219DF521CC9EAF00EE5E5F /* DetailViewController.swift in Sources */,
 				68219DBD21CC413D00EE5E5F /* AppDelegate.swift in Sources */,
+				68219DF721D0B27500EE5E5F /* ImageStore.swift in Sources */,
 				68219DF121CC7ED600EE5E5F /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

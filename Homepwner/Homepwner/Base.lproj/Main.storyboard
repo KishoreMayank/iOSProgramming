@@ -91,7 +91,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mjq-HQ-gAO">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="mjq-HQ-gAO">
                                 <rect key="frame" x="16" y="72" width="343" height="543"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fSF-i2-hhr">
@@ -115,7 +115,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NHE-4s-3NR">
-                                        <rect key="frame" x="0.0" y="38" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="31" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGx-a8-Igb">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
@@ -135,7 +135,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bC1-Bd-wdx">
-                                        <rect key="frame" x="0.0" y="76" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="62" width="343" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdD-Rl-OCd">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
@@ -155,33 +155,48 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q8s-Mn-uko">
-                                        <rect key="frame" x="0.0" y="114" width="343" height="429"/>
+                                        <rect key="frame" x="0.0" y="93" width="343" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="248" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-pM-dHg">
+                                        <rect key="frame" x="0.0" y="114.5" width="343" height="428.5"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="FEn-0f-VsV" firstAttribute="leading" secondItem="Nwc-AV-aI6" secondAttribute="leading" id="7fS-wW-cwx"/>
                                     <constraint firstItem="thU-Pr-CCo" firstAttribute="leading" secondItem="FEn-0f-VsV" secondAttribute="leading" id="l2N-x6-7ic"/>
                                 </constraints>
                             </stackView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2f6-zu-iXB">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="9Gf-cV-oZh">
+                                        <connections>
+                                            <action selector="takePicture:" destination="aLw-xa-f9j" id="dEk-sw-bfl"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="mjq-HQ-gAO" firstAttribute="top" secondItem="My7-G8-Mtv" secondAttribute="top" constant="8" id="4X2-IC-aiW"/>
+                            <constraint firstItem="2f6-zu-iXB" firstAttribute="leading" secondItem="My7-G8-Mtv" secondAttribute="leading" id="DZl-Qe-pni"/>
                             <constraint firstItem="mjq-HQ-gAO" firstAttribute="leading" secondItem="My7-G8-Mtv" secondAttribute="leading" constant="16" id="FRD-Fl-3nQ"/>
-                            <constraint firstItem="My7-G8-Mtv" firstAttribute="bottom" secondItem="mjq-HQ-gAO" secondAttribute="bottom" constant="8" id="HQn-9Z-wCY"/>
+                            <constraint firstItem="My7-G8-Mtv" firstAttribute="bottom" secondItem="2f6-zu-iXB" secondAttribute="bottom" id="GbR-dF-I9F"/>
+                            <constraint firstAttribute="trailing" secondItem="2f6-zu-iXB" secondAttribute="trailing" id="Tbl-8T-29f"/>
                             <constraint firstItem="My7-G8-Mtv" firstAttribute="trailing" secondItem="mjq-HQ-gAO" secondAttribute="trailing" constant="16" id="d0Y-6d-Tao"/>
+                            <constraint firstItem="2f6-zu-iXB" firstAttribute="top" secondItem="mjq-HQ-gAO" secondAttribute="bottom" constant="8" id="wXH-Mt-0Ko"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="My7-G8-Mtv"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="8jq-nC-1zs" appends="YES" id="Hf0-au-Msa"/>
-                        </connections>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="dateLabel" destination="q8s-Mn-uko" id="hLh-n7-tNV"/>
+                        <outlet property="imageView" destination="R5L-pM-dHg" id="eFO-Sj-OuT"/>
                         <outlet property="nameField" destination="thU-Pr-CCo" id="HVD-Ov-dUm"/>
                         <outlet property="serialNumberField" destination="FEn-0f-VsV" id="bkP-dC-nRg"/>
                         <outlet property="valueField" destination="Nwc-AV-aI6" id="gHE-tL-Xit"/>
